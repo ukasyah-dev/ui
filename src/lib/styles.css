@@ -1,0 +1,18 @@
+@import 'tailwindcss';
+@plugin '@tailwindcss/forms';
+@plugin '@tailwindcss/typography';
+
+@theme {
+	--font-sans: 'Inter', 'sans-serif';
+}
+
+html,
+body,
+body > div {
+	height: 100%;
+}
+
+body {
+	position: relative;
+	font-optical-sizing: auto;
+}

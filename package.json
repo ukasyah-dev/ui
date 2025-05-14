@@ -27,6 +27,10 @@
 		".": {
 			"types": "./dist/index.d.ts",
 			"svelte": "./dist/index.js"
+		},
+		"./styles.css": {
+			"import": "./dist/styles.css",
+			"default": "./dist/styles.css"
 		}
 	},
 	"peerDependencies": {
@@ -65,5 +69,8 @@
 		"onlyBuiltDependencies": [
 			"esbuild"
 		]
+	},
+	"dependencies": {
+		"tailwind-merge": "^3.3.0"
 	}
 }
