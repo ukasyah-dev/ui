@@ -1,8 +1,35 @@
 @import 'tailwindcss';
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+@source './components';
+
+:root {
+	--background: var(--color-white);
+	--foreground: var(--color-neutral-800);
+}
+
+:root[data-theme='dark'] {
+	--background: var(--color-neutral-900);
+	--background-semimuted: var(--color-neutral-800);
+	--background-muted: var(--color-neutral-700);
+	--foreground: var(--color-neutral-200);
+	--foreground-semimuted: var(--color-neutral-300);
+	--foreground-muted: var(--color-neutral-400);
+	--border: var(--color-neutral-800);
+
+	color-scheme: dark;
+}
 
 @theme {
+	--color-background: var(--background);
+	--color-background-semimuted: var(--background-semimuted);
+	--color-background-muted: var(--background-muted);
+	--color-foreground: var(--foreground);
+	--color-foreground-semimuted: var(--foreground-semimuted);
+	--color-foreground-muted: var(--foreground-muted);
+	--color-border: var(--border);
+
 	--font-sans: 'Inter', 'sans-serif';
 }
 
@@ -18,6 +45,8 @@ body > div {
 }
 
 body {
+	background-color: var(--color-background);
+	color: var(--color-foreground);
 	position: relative;
 	font-optical-sizing: auto;
 }
