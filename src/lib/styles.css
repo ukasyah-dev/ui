@@ -12,6 +12,11 @@ body > div {
 	height: 100%;
 }
 
+body > div {
+	display: flex;
+	flex-direction: column;
+}
+
 body {
 	position: relative;
 	font-optical-sizing: auto;
