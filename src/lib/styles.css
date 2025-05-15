@@ -31,6 +31,7 @@
 	--color-border: var(--border);
 
 	--font-sans: 'Inter', 'sans-serif';
+	--font-mono: 'Roboto Mono', 'monospace';
 }
 
 html,

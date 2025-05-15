@@ -10,7 +10,7 @@
 		</p>
 
 		<div class="text-foreground-semimuted mr-7 flex items-center gap-7 text-sm">
-			<a href="/">Getting started</a>
+			<a href="/docs/getting-started">Getting started</a>
 			<a href="/">Components</a>
 			<a href="/">Examples</a>
 		</div>

@@ -1,6 +1,8 @@
 <script lang="ts">
-	import { Container } from '$lib/index.js';
+	import { Container, title } from '$lib/index.js';
 	import MainHeader from './MainHeader.svelte';
+
+	title.reset();
 </script>
 
 <MainHeader />
