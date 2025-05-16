@@ -19,8 +19,7 @@
 		'prose-h2:text-2xl prose-h2:mt-9',
 		'prose-p:my-0 prose-p:mt-5',
 		'prose-a:font-medium prose-a:text-foreground-primary prose-a:underline-offset-2',
-		'prose-pre:my-0 prose-pre:mt-5',
-		// 'prose-code:font-normal',
+		'prose-pre:my-0 prose-pre:mt-5 prose-pre:text-base',
 		className?.toString()
 	)}
 	size={containerSize}
