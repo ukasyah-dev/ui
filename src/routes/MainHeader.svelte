@@ -12,7 +12,7 @@
 		<div class="text-foreground-semimuted mr-7 flex items-center gap-7 text-sm">
 			<a href="/docs/getting-started">Getting started</a>
 			<a href="/docs/components">Components</a>
-			<a href="/">Examples</a>
+			<a href="/docs/examples">Examples</a>
 		</div>
 
 		<div class="text-foreground-semimuted flex items-center gap-2">

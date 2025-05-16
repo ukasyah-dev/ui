@@ -1,13 +1,15 @@
 <script lang="ts">
-	import type { HTMLButtonAttributes } from 'svelte/elements';
+	import type { HTMLAttributes, HTMLButtonAttributes } from 'svelte/elements';
 	import { twMerge } from 'tailwind-merge';
 
-	type Props = HTMLButtonAttributes & {
-		square?: boolean;
-		variant?: 'ghost';
-	};
+	type Props = HTMLButtonAttributes &
+		HTMLAttributes<HTMLAnchorElement> & {
+			href?: string;
+			square?: boolean;
+			variant?: 'ghost';
+		};
 
-	let { children, class: className, square, variant = 'ghost', ...rest }: Props = $props();
+	let { children, class: className, href, square, variant = 'ghost', ...rest }: Props = $props();
 
 	let _class = twMerge(
 		'cursor-pointer flex items-center justify-center',
@@ -18,6 +20,12 @@
 	);
 </script>
 
-<button class={_class} {...rest}>
-	{@render children?.()}
-</button>
+{#if href}
+	<a class={_class} {href} {...rest}>
+		{@render children?.()}
+	</a>
+{:else}
+	<button class={_class} {...rest}>
+		{@render children?.()}
+	</button>
+{/if}
