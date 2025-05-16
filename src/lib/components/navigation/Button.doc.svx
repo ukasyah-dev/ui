@@ -1,0 +1,34 @@
+<script lang="ts">
+  import { Button, Preview } from '$lib/index.js';
+  import { Icon, Check } from 'svelte-hero-icons';
+</script>
+
+# Button
+
+Flexible, accessible, and styled action trigger you can use for just about anything — forms, dialogs, navigation, or custom interactions.
+
+<Preview>
+<Button size="sm">Small</Button>
+<Button>Medium</Button>
+<Button size="lg">Large</Button>
+<Button disabled>Disabled</Button>
+<Button variant="secondary">Secondary</Button>
+<Button disabled variant="secondary">Disabled</Button>
+<Button aria-label="Check" size="sm" square variant="secondary">
+  <Icon src={Check} class="w-5 h-5 stroke-[2.25]" />
+</Button>
+</Preview>
+
+
+```svelte
+<Button size="sm">Small</Button>
+<Button>Medium</Button>
+<Button size="lg">Large</Button>
+<Button size="xl">Extra large</Button>
+<Button disabled>Disabled</Button>
+<Button variant="secondary">Secondary</Button>
+<Button disabled variant="secondary">Disabled</Button>
+<Button aria-label="Check" size="sm" square variant="secondary">
+  <Icon src={Check} class="w-5 h-5 stroke-[2.25]" />
+</Button>
+```

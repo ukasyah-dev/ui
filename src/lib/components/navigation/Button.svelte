@@ -5,16 +5,31 @@
 	type Props = HTMLButtonAttributes &
 		HTMLAttributes<HTMLAnchorElement> & {
 			href?: string;
+			size?: 'sm' | 'md' | 'lg';
 			square?: boolean;
-			variant?: 'ghost';
+			variant?: 'primary' | 'secondary' | 'ghost';
 		};
 
-	let { children, class: className, href, square, variant = 'ghost', ...rest }: Props = $props();
+	let {
+		children,
+		class: className,
+		href,
+		size = 'md',
+		square,
+		variant = 'primary',
+		...rest
+	}: Props = $props();
 
 	let _class = twMerge(
 		'cursor-pointer flex items-center justify-center',
-		'transition duration-100',
+		'font-semibold transition-colors duration-75',
+		'outline-none ring-0 ring-offset-background focus-visible:ring-offset-2 focus-visible:ring-2 focus-visible:ring-border-primary',
+		size === 'md' && 'h-10 px-4 text-base rounded-md',
+		size === 'lg' && 'h-11 px-5 text-base rounded-md',
 		square && 'px-0 w-8 h-8 rounded-lg',
+		variant === 'primary' && 'bg-background-primary text-white hover:bg-background-primary-active',
+		variant === 'secondary' &&
+			'bg-background-semimuted text-foreground border border-border hover:bg-background-muted',
 		variant === 'ghost' && 'hover:bg-background-semimuted',
 		className?.toString()
 	);

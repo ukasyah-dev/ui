@@ -3,7 +3,7 @@
 	import { Icon, Sun } from 'svelte-hero-icons';
 </script>
 
-<div class="border-border border-b">
+<div class="border-border-muted border-b">
 	<Container class="flex h-14 flex-shrink-0 items-center" size="xl">
 		<p class="mr-auto font-semibold">
 			<a href="/">ukasyah-dev/ui</a>
@@ -16,10 +16,10 @@
 		</div>
 
 		<div class="text-foreground-semimuted flex items-center gap-2">
-			<Button square>
+			<Button square variant="ghost">
 				<Icon src={Sun} class="size-5" />
 			</Button>
-			<Button square>
+			<Button square variant="ghost">
 				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="size-5">
 					<g fill="none">
 						<g clip-path="url(#akarIconsGithubFill0)">
