@@ -14,7 +14,7 @@
 		</form>
 
 		<p class="text-foreground-semimuted text-center">
-			Don't have an account? <Link href="/register">Sign up</Link>
+			Don't have an account? <Link href="#register">Sign up</Link>
 		</p>
 	</Container>
 </div>
