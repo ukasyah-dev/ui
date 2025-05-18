@@ -20,6 +20,7 @@
 		'prose-p:my-0 prose-p:mt-5 prose-p:text-foreground',
 		'prose-a:font-medium prose-a:text-foreground-primary prose-a:underline-offset-2',
 		'prose-pre:my-0 prose-pre:mt-5 prose-pre:text-base',
+		'prose-code:text-foreground-semimuted',
 		className?.toString()
 	)}
 	size={containerSize}
