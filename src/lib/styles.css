@@ -5,6 +5,11 @@
 @source './components';
 
 :root {
+	--color-neutral-50: #c9c9c9;
+	--color-neutral-100: #b8b8b8;
+	--color-neutral-200: #828282;
+	--color-neutral-300: #696969;
+	--color-neutral-400: #424242;
 	--color-neutral-500: #3b3b3b;
 	--color-neutral-600: #2e2e2e;
 	--color-neutral-700: #242424;
@@ -20,9 +25,11 @@
 	--background-muted: var(--color-neutral-600);
 	--background-primary: var(--color-indigo-600);
 	--background-primary-active: var(--color-indigo-700);
-	--foreground: var(--color-neutral-200);
-	--foreground-semimuted: var(--color-neutral-300);
-	--foreground-muted: var(--color-neutral-400);
+	--foreground: var(--color-neutral-50);
+	--foreground-semimuted: var(--color-neutral-100);
+	--foreground-muted: var(--color-neutral-200);
+	--foreground-heading: var(--color-white);
+	--foreground-primary: var(--color-indigo-400);
 	--border: var(--color-neutral-500);
 	--border-semimuted: var(--color-neutral-600);
 	--border-muted: var(--color-neutral-700);
@@ -40,6 +47,8 @@
 	--color-foreground: var(--foreground);
 	--color-foreground-semimuted: var(--foreground-semimuted);
 	--color-foreground-muted: var(--foreground-muted);
+	--color-foreground-heading: var(--foreground-heading);
+	--color-foreground-primary: var(--foreground-primary);
 	--color-border: var(--border);
 	--color-border-semimuted: var(--border-semimuted);
 	--color-border-muted: var(--border-muted);

@@ -5,17 +5,17 @@
 
 <div class="border-border-muted border-b">
 	<Container class="flex h-14 flex-shrink-0 items-center" size="xl">
-		<p class="mr-auto font-semibold">
+		<p class="text-foreground-heading mr-auto text-lg font-semibold">
 			<a href="/">ukasyah-dev/ui</a>
 		</p>
 
-		<div class="text-foreground-semimuted mr-7 flex items-center gap-7 text-sm">
+		<div class="text-foreground mr-7 flex items-center gap-7 text-sm">
 			<a href="/docs/getting-started">Getting started</a>
 			<a href="/docs/components">Components</a>
 			<a href="/docs/examples">Examples</a>
 		</div>
 
-		<div class="text-foreground-semimuted flex items-center gap-2">
+		<div class="text-foreground flex items-center gap-2">
 			<Button square variant="ghost">
 				<Icon src={Sun} class="size-5" />
 			</Button>
